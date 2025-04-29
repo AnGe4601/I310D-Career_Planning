@@ -1,7 +1,7 @@
 # import streamlit as st
 # import random
 
-# st.title("Job Fulfillment Checker 🎯")
+# st.title("Career Planning 👩‍💻")
 
 # early_pay = st.text_input("Enter your early career pay ($):")
 # mid_career = st.text_input("Enter your mid-career pay ($):")
@@ -27,7 +27,12 @@ from mpl_toolkits.mplot3d import Axes3D
 
 st.set_page_config(page_title="Career Fulfillment Clustering", layout="wide")
 
-st.title("🎯 Career Fulfillment Analysis App")
+st.title("👩‍💻 Career Planning: U.S Post College Salaries According to Major and Degree")
+st.header("Information about the project:")
+st.write("This is the final project for course I310D: Intro to Human-Centered Data Science" +
+         "It is produced by Team Data Devils, formerly known as Team MANS.")
+st.write("Simply type in your actual or projected early career pay, and actual or projected career pay" +
+         "You would be able to find out whether or not you are satisfied with your career choice!")
 
 # Upload or Load data
 @st.cache_data
