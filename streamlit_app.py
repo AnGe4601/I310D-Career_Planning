@@ -93,7 +93,18 @@ st.header("💬 Enter Your Own Career Data:")
 early_pay = st.number_input("Enter your Early Career Pay ($)", min_value=0)
 mid_career = st.number_input("Enter your Mid Career Pay ($)", min_value=0)
 fulfillment_rate = round(random.random(), 2)
-st.write(f"Fulfillment rate is {fulfillment_rate:.0%}")
+st.write("The system will randomly generate a percentage to represent your possible fulfillment rate regarding your career.")
+st.write(f"Your fulfillment rate is {fulfillment_rate:.0%}")
+if fulfillment_rate <= 0.2:
+         st.write("😬 This might not be the right job for you.")
+elif fulfillment_rate <= 0.4:
+         st.write("😑 Somewhat dissatisfied...")
+elif fulfillment_rate <= 0.6:
+         st.write("🤔 I guess you are doing okay.")
+elif fulfillment_rate <= 0.8:
+         st.write("😁 You are enjoying it!")
+elif fulfillment_rate <= 1:
+         st.write("🤩 This might the perfect job for you!!")
 
 # --- Clustering ---
 X = df[["Early Career Pay", "Mid-Career Pay", "% High Meaning"]].to_numpy()
