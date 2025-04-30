@@ -9,5 +9,7 @@ To interact with our project, click the following link to our demo: https://blan
 
 ## About the Repo
 File 'final-post-college-salaries.csv' is the raw dataset, "U.S Post College Salaries" by Dharmendra Rathod, drawn from Kaggle.
+
 File 'demo.py' includes the original code stored in a Jupyter Notebook.
+
 File 'streamlit_app.py' includes code that constructs our interactive interface for the demo.
