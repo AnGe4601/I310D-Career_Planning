@@ -16,6 +16,7 @@
 #         st.success("😄 You are really enjoying it!")
 import os
 import pandas as pd
+import random
 import streamlit as st
 from matplotlib import pyplot as plt
 import seaborn as sns
@@ -91,7 +92,8 @@ st.header("💬 Enter Your Own Career Data:")
 
 early_pay = st.number_input("Enter your Early Career Pay ($)", min_value=0)
 mid_career = st.number_input("Enter your Mid Career Pay ($)", min_value=0)
-fulfillment_rate = st.slider("Rate your job fulfillment (0-100%)", 0, 100, 50) / 100
+fulfillment_rate = round(random.random(), 2)
+st.write(f"Fulfillment rate is {fulfillment_rate:.0%}")
 
 # --- Clustering ---
 X = df[["Early Career Pay", "Mid-Career Pay", "% High Meaning"]].to_numpy()
